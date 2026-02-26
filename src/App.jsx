@@ -8,6 +8,7 @@ import PublicRoute from './routes/PublicRoute'
 import ProtectedRoute from './routes/ProtectedRoute'
 import { NotFound } from './pages/NotFound'
 import Pacientes from './pages/Pacientes'
+import Especialidades from './pages/Especialidades'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                 <Route element={<Dashboard />}>
                   <Route index element={<Pacientes />} />
                   <Route path='pacientes' element={<Pacientes />} />
+                  <Route path='especialidades' element={<Especialidades />} />
                 </Route>
               </Routes>
             </ProtectedRoute>

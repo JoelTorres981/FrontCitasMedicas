@@ -12,7 +12,8 @@ const storeAuth = create(
             setToken: (token) => set({ token }),
             setRol: (rol) => set({ rol }),
             setNombre: (nombre) => set({ nombre }),
-            clearToken: () => set({ token: null, nombre: null })
+            setApellido: (apellido) => set({ apellido }),
+            clearToken: () => set({ token: null, nombre: null, apellido: null })
         }),
 
         { name: "auth-token" }

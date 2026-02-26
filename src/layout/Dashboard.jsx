@@ -6,7 +6,7 @@ import storeAuth from '../context/storeAuth'
 const Dashboard = () => {
     const location = useLocation()
     const urlActual = location.pathname
-    const { clearToken, nombre } = storeAuth()
+    const { clearToken, nombre, apellido } = storeAuth()
     const [expanded, setExpanded] = useState(false)
     return (
         <div className='md:flex md:min-h-screen'>
@@ -60,7 +60,7 @@ const Dashboard = () => {
             <div className='flex-1 flex flex-col justify-between h-screen bg-gray-100'>
                 <div className='bg-primary/80 py-2 flex md:justify-end items-center gap-5 justify-center'>
                     <div className='text-md font-semibold text-slate-100'>
-                        Usuario - {nombre}
+                        Usuario - {nombre} {apellido}
                     </div>
                     <div>
                         <img src="https://cdn-icons-png.flaticon.com/512/4715/4715329.png" alt="img-client" className="border-2 border-base rounded-full" width={50} height={50} />
