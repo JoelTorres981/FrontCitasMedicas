@@ -11,7 +11,7 @@ const Login = () => {
     const navigate = useNavigate()
     const { register, handleSubmit, formState: { errors } } = useForm()
     const fetchDataBackend = useFetch()
-    const { setToken, setRol, setNombre } = storeAuth()
+    const { setToken, setRol, setNombre, setApellido } = storeAuth()
 
     const loginUser = async (dataForm) => {
         const url = `${import.meta.env.VITE_BACKEND_URL}/usuarios/login`
@@ -20,6 +20,7 @@ const Login = () => {
             setToken(response.token)
             setRol(response.usuario?.rol || response.rol)
             setNombre(response.usuario?.nombre || response.nombre)
+            setApellido(response.usuario?.apellido || response.apellido)
             navigate('/dashboard')
         }
     }

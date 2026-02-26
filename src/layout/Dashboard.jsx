@@ -34,21 +34,21 @@ const Dashboard = () => {
 
                     <li className="text-center">
                         <Link to='/dashboard/pacientes' className={`${urlActual === '/dashboard/pacientes' ? 'text-slate-900 bg-secondary' : 'text-slate-600'} text-lg mt-2 hover:text-slate-600 flex items-center gap-3 px-2 py-2 rounded-md ${!expanded && 'md:justify-center'}`}>
-                            <FaUsers className="text-2xl min-w-[1.5rem]" />
+                            <FaUsers className="text-2xl" />
                             <span className={`whitespace-nowrap duration-200 ${!expanded && 'md:hidden'}`}>Pacientes</span>
                         </Link>
                     </li>
 
                     <li className="text-center">
                         <Link to='/dashboard/especialidades' className={`${urlActual === '/dashboard/especialidades' ? 'text-slate-900 bg-secondary' : 'text-slate-600'} text-lg mt-2 hover:text-slate-600 flex items-center gap-3 px-2 py-2 rounded-md ${!expanded && 'md:justify-center'}`}>
-                            <FaStethoscope className="text-2xl min-w-[1.5rem]" />
+                            <FaStethoscope className="text-2xl" />
                             <span className={`whitespace-nowrap duration-200 ${!expanded && 'md:hidden'}`}>Especialidades</span>
                         </Link>
                     </li>
 
                     <li className="text-center">
                         <Link to='/dashboard/citas' className={`${urlActual === '/dashboard/citas' ? 'text-slate-900 bg-secondary' : 'text-slate-600'} text-lg mt-2 hover:text-slate-600 flex items-center gap-3 px-2 py-2 rounded-md ${!expanded && 'md:justify-center'}`}>
-                            <FaRegCalendarAlt className="text-2xl min-w-[1.5rem]" />
+                            <FaRegCalendarAlt className="text-2xl" />
                             <span className={`whitespace-nowrap duration-200 ${!expanded && 'md:hidden'}`}>Citas</span>
                         </Link>
                     </li>
