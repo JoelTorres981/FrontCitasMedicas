@@ -22,8 +22,11 @@ export function useFetch() {
                     "Content-Type": "application/json",
                     ...(token && { "Authorization": `Bearer ${token}` }),
                     ...headers,
-                },
-                data
+                }
+            }
+            
+            if (data !== null && data !== undefined) {
+                options.data = data
             }
             const response = await axios(options)
             toast.dismiss(loadingToast)
