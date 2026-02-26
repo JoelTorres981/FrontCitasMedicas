@@ -1,0 +1,29 @@
+/* Importacion de fuentes de letra */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* Estilos de letra */
+  --font-mulish: "Mulish", sans-serif;
+  --font-jaldi: "Jaldi", sans-serif;
+
+  /* Colores */
+  --color-base: #F4F4F2;       /* El color crema claro (Fondo) */
+  --color-accent: #6EE397;     /*  */
+  --color-secondary: #8BCDCD;  /* El turquesa suave */
+  --color-primary: #3797A4;    /* El azul petróleo (Principal) */
+}
+
+/* Variante dark */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Estilos base globales */
+body {
+  /* Variable definida para que sea la default */
+  font-family: var(--font-mulish);
+}
+
+html {
+  scroll-behavior: smooth;
+}
