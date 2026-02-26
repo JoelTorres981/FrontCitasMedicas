@@ -15,9 +15,6 @@
   --color-primary: #3797A4;    /* El azul petróleo (Principal) */
 }
 
-/* Variante dark */
-@custom-variant dark (&:where(.dark, .dark *));
-
 /* Estilos base globales */
 body {
   /* Variable definida para que sea la default */

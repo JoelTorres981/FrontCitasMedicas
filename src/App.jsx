@@ -7,6 +7,7 @@ import Dashboard from './layout/Dashboard'
 import PublicRoute from './routes/PublicRoute'
 import ProtectedRoute from './routes/ProtectedRoute'
 import { NotFound } from './pages/NotFound'
+import Pacientes from './pages/Pacientes'
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
             <ProtectedRoute>
               <Routes>
                 <Route element={<Dashboard />}>
+                  <Route index element={<Pacientes />} />
+                  <Route path='pacientes' element={<Pacientes />} />
                 </Route>
               </Routes>
             </ProtectedRoute>
